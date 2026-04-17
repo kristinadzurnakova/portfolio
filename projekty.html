@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristina Dzurnakova</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="PRstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-mode projects-page">
+    
+    <header>
+        <div class="logo"><a href="index.html"><img src="sign.svg" class="logo-img" alt="Logo" style="width: 200px; opacity: 0.6;"></a></div>
+        <div class="text">DIZAJN, KTORÝ ROZPRÁVA</div>
+        <div class="menu-btn" onclick="toggleMenu()" style="cursor: pointer; z-index: 10001;">MENU ○</div>
+    </header>
+
+    <main class="projects-grid">
+
+        <!-- CLIENTS -->
+        <p class="section-label">CLIENTS</p>
+
+        <div class="project-row" onclick="openProjectRow(this)"
+            data-img="podpiskarta.jpg"
+            data-title="Spišskí rytieri"
+            data-description="Visual Identity"
+            data-article="Grafický projekt pre extraligový basketbalový tím zo Spišskej Novej Vsi. Projekt zahŕňal návrh podpisových kariet pre hráčov a kompletnú vizuálnu komunikáciu pre Instagram profil klubu. Dizajn vychádza z klubových farieb a pracuje s výrazným kontrastom s cieľom podporiť dynamiku, energiu a športový charakter klubu.">
+            <div class="pr-img"><img src="podpiskarta.jpg" alt="Rytieri"></div>
+            <div class="pr-text">
+                <span class="pr-index">01</span>
+                <h2 class="pr-title">Spišskí<br>rytieri</h2>
+                <span class="pr-cat">Visual Identity</span>
+            </div>
+            <span class="pr-arrow">→</span>
+        </div>
+
+        <div class="project-row" onclick="openProjectRow(this)"
+            data-img="logo_akz.png"
+            data-title="AKZ"
+            data-description="Visual Identity"
+            data-article="Tvorba loga a vizuálnej identity pre kynologický klub. Návrh bol zameraný na čistotu a prehľadnosť, aby identita fungovala naprieč rôznymi formátmi.">
+            <div class="pr-img"><img src="logo_akz.png" alt="AKZ"></div>
+            <div class="pr-text">
+                <span class="pr-index">02</span>
+                <h2 class="pr-title">AKZ</h2>
+                <span class="pr-cat">Visual Identity</span>
+            </div>
+            <span class="pr-arrow">→</span>
+        </div>
+
+        <div class="project-row" onclick="openProjectRow(this)"
+            data-img="2A.png"
+            data-title="2A"
+            data-description="Web Design"
+            data-article="Dizajn webovej stránky pre športovú značku a osobného trénera vytvorený v nástroji Figma. Pri návrhu sme kládli dôraz na cieľovú skupinu značky – mladých ľudí a športovcov vo veku 20 – 40 rokov. Zvolený tmavý vizuálny štýl v kombinácii s farbami značky podčiarkuje jej exkluzivitu a dynamický charakter.">
+            <div class="pr-img"><img src="2A.png" alt="2A"></div>
+            <div class="pr-text">
+                <span class="pr-index">03</span>
+                <h2 class="pr-title">2A</h2>
+                <span class="pr-cat">Web Design</span>
+            </div>
+            <span class="pr-arrow">→</span>
+        </div>
+
+        <div class="project-row" onclick="openProjectRow(this)"
+            data-img="skk.png"
+            data-title="SKK Canislog"
+            data-description="Web Design & Development"
+            data-article="Tvorba webovej stránky pre športový a kynologický klub Canislog v Poprade. Na projekte som sa podieľala programátorsky aj dizajnérsky. Návrh bol zameraný na jednoduchosť a prehľadnosť, keďže daná oblasť obsahuje veľké množstvo informácií.">
+            <div class="pr-img"><img src="skk.png" alt="SKK"></div>
+            <div class="pr-text">
+                <span class="pr-index">04</span>
+                <h2 class="pr-title">SKK<br>Canislog</h2>
+                <span class="pr-cat">Web Design & Development</span>
+            </div>
+            <span class="pr-arrow">→</span>
+        </div>
+
+        <div class="project-row" onclick="openProjectRow(this)"
+            data-img="red.png"
+            data-title="RED"
+            data-description="Creative Post-processing"
+            data-article="Postprodukcia štúdiového portrétu a transformácia pôvodne neutrálne nasnímaného portrétu do umeleckého vizuálu s dôrazom na prácu so svetlom, tieňom a atmosférou. Úpravy zahŕňali kreatívne doladenie expozície, kontrastu a farebného tónovania.">
+            <div class="pr-img"><img src="red.png" alt="RED"></div>
+            <div class="pr-text">
+                <span class="pr-index">05</span>
+                <h2 class="pr-title">RED</h2>
+                <span class="pr-cat">Creative Post-processing</span>
+            </div>
+            <span class="pr-arrow">→</span>
+        </div>
+
+        <div class="project-row" onclick="openProjectRow(this)"
+            data-img="sleevless.png"
+            data-title="Sleevless"
+            data-description="Creative Post-processing"
+            data-article="Postprodukcia štúdiového portrétu a transformácia pôvodne neutrálne nasnímaného portrétu do umeleckého vizuálu s dôrazom na prácu so svetlom, tieňom a atmosférou.">
+            <div class="pr-img"><img src="sleevless.png" alt="Sleevless"></div>
+            <div class="pr-text">
+                <span class="pr-index">06</span>
+                <h2 class="pr-title">Sleevless</h2>
+                <span class="pr-cat">Creative Post-processing</span>
+            </div>
+            <span class="pr-arrow">→</span>
+        </div>
+
+        <!-- ARTWORKS -->
+        <hr class="section-divider">
+        <p class="section-label">ARTWORKS</p>
+
+        <div class="project-row" onclick="openProjectRow(this)"
+            data-img="mayhem.png"
+            data-title="Meyhem"
+            data-description="Artwork"
+            data-article="Séria autorských vizuálnych prác zameraných na experiment s kompozíciou, farbou a typografiou. Pri týchto projektoch som sa väčšinou inšpirovala vlastnými emóciami a náladami, ktoré sa stali hlavným impulzom tvorby.">
+            <div class="pr-img"><img src="mayhem.png" alt="Mayhem"></div>
+            <div class="pr-text">
+                <span class="pr-index">07</span>
+                <h2 class="pr-title">Meyhem</h2>
+                <span class="pr-cat">Artwork</span>
+            </div>
+            <span class="pr-arrow">→</span>
+        </div>
+
+        <div class="project-row" onclick="openProjectRow(this)"
+            data-img="tatry.png"
+            data-title="Tatry"
+            data-description="Artwork"
+            data-article="Séria autorských vizuálnych prác zameraných na experiment s kompozíciou, farbou a typografiou. Prírodné textúry a tmavý kontrast.">
+            <div class="pr-img"><img src="tatry.png" alt="Tatry"></div>
+            <div class="pr-text">
+                <span class="pr-index">08</span>
+                <h2 class="pr-title">Tatry</h2>
+                <span class="pr-cat">Artwork</span>
+            </div>
+            <span class="pr-arrow">→</span>
+        </div>
+
+        <div class="project-row" onclick="openProjectRow(this)"
+            data-img="amartes.png"
+            data-title="Amartes"
+            data-description="Artwork"
+            data-article="Séria autorských vizuálnych prác zameraných na experiment s kompozíciou, farbou a typografiou. Vyjadrenie emócií cez abstraktné tvary.">
+            <div class="pr-img"><img src="amartes.png" alt="Amartes"></div>
+            <div class="pr-text">
+                <span class="pr-index">09</span>
+                <h2 class="pr-title">Amartes</h2>
+                <span class="pr-cat">Artwork</span>
+            </div>
+            <span class="pr-arrow">→</span>
+        </div>
+
+        <div class="project-row" onclick="openProjectRow(this)"
+            data-img="solace.png"
+            data-title="Solace"
+            data-description="Artwork"
+            data-article="Séria autorských vizuálnych prác zameraných na experiment s kompozíciou, farbou a typografiou. Vyjadrenie emócií cez abstraktné tvary.">
+            <div class="pr-img"><img src="solace.png" alt="Solace"></div>
+            <div class="pr-text">
+                <span class="pr-index">10</span>
+                <h2 class="pr-title">Solace</h2>
+                <span class="pr-cat">Artwork</span>
+            </div>
+            <span class="pr-arrow">→</span>
+        </div>
+
+        <div class="project-row" onclick="openProjectRow(this)"
+            data-img="carlton.png"
+            data-title="Carlton"
+            data-description="Design Concept"
+            data-article="Návrh dizajnu pre hotelový resort s dôrazom na nadštandardnosť, nadčasovosť a dôveryhodnosť. Tento projekt vznikol ako autorský koncept bez reálneho klienta — priestor na experimentovanie s vizuálnym smerom značky.">
+            <div class="pr-img"><img src="carlton.png" alt="Carlton"></div>
+            <div class="pr-text">
+                <span class="pr-index">11</span>
+                <h2 class="pr-title">Carlton</h2>
+                <span class="pr-cat">Design Concept</span>
+            </div>
+            <span class="pr-arrow">→</span>
+        </div>
+
+    </main>
+
+    <!-- MENU OVERLAY -->
+    <div id="overlay-menu" class="overlay">
+        <div class="close-btn" onclick="toggleMenu()" style="cursor: pointer;">CLOSE ○</div>
+        <div class="menu-wrapper">
+            <nav class="menu-links">
+                <a href="index.html">DOMOV</a>
+                <a href="about.html">O MNE</a>
+            </nav>
+            <div class="menu-contact-section">
+                <span class="contact-label">POĎME TVORIŤ SPOLU</span>
+                <a href="mailto:kdzurnakovaa@gmail.com" class="contact-email">kdzurnakovaa@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div id="project-lightbox" class="overlay" style="display: none; z-index: 100002;">
+        <div class="close-btn" onclick="closeProject()" style="cursor: pointer; position: absolute; top: 36px; right: 40px; z-index: 100005;">CLOSE ✕</div>
+        <div class="lightbox-content">
+            <div class="lightbox-text-wrapper">
+                <h2 id="lightbox-title"></h2>
+                <p id="lightbox-desc"></p>
+                <div id="lightbox-article" class="project-article"></div>
+            </div>
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div id="live-clock"></div>
+        <div class="copyright">© 2026 Kristina Dzurnakova.</div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Pomocná funkcia pre nový project-row layout
+        function openProjectRow(row) {
+            const lightbox = document.getElementById('project-lightbox');
+            if (!lightbox) return;
+            document.getElementById('lightbox-img').src = row.getAttribute('data-img');
+            document.getElementById('lightbox-title').innerText = row.getAttribute('data-title') || '';
+            const desc = row.getAttribute('data-description') || '';
+            document.getElementById('lightbox-desc').innerText = desc ? `[${desc}]` : '';
+            document.getElementById('lightbox-article').innerText = row.getAttribute('data-article') || '';
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+    </script>
+</body>
+</html>
