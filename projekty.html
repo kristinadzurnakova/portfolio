@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristina Dzurnakova</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="PRstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-mode projects-page">
+    
+    <header>
+        <div class="logo"><a href="index.html"><img src="sign.svg" class="logo-img" alt="Logo" style="width: 200px; opacity: 0.6;"></a></div>
+        <div class="text">DIZAJN, KTORÝ ROZPRÁVA</div>
+        <div class="menu-btn" onclick="toggleMenu()" style="cursor: pointer; z-index: 10001;">MENU ○</div>
+    </header>
+
+    <!-- CATEGORY TABS -->
+    <div class="category-tabs">
+        <button class="cat-tab active" data-cat="webdesign" onclick="switchCategory('webdesign', this)">Web Design</button>
+        <button class="cat-tab" data-cat="graphicdesign" onclick="switchCategory('graphicdesign', this)">Graphic Design</button>
+        <button class="cat-tab" data-cat="logodesign" onclick="switchCategory('logodesign', this)">Logo Design</button>
+        <button class="cat-tab" data-cat="photo" onclick="switchCategory('photo', this)">Photo Postprocessing</button>
+    </div>
+
+    <main class="projects-grid">
+
+        <!-- WEB DESIGN -->
+        <div class="cat-section" id="cat-webdesign">
+
+            <div class="project-row"
+                data-title="2A"
+                data-description="Web Design"
+                data-article="Dizajn webovej stránky pre športovú značku a osobného trénera vytvorený v nástroji Figma. Pri návrhu sme kládli dôraz na cieľovú skupinu značky – mladých ľudí a športovcov vo veku 20 – 40 rokov. Zvolený tmavý vizuálny štýl v kombinácii s farbami značky podčiarkuje jej exkluzivitu a dynamický charakter."
+                data-imgs="2A.webp, 2A-2.webp, 2A-3.webp, 2A-4.webp, 2A-5.webp"
+                onclick="openProject(this)">
+                <div class="pr-img"><img src="2A.webp" alt="2A"></div>
+                <div class="pr-text">
+                    <span class="pr-index">01</span>
+                    <h2 class="pr-title">2A</h2>
+                    <span class="pr-cat">Web Design</span>
+                </div>
+                <span class="pr-arrow">→</span>
+            </div>
+
+            <div class="project-row"
+                data-title="SKK Canislog"
+                data-description="Web Design & Development"
+                data-article="Tvorba webovej stránky pre športový a kynologický klub Canislog v Poprade. Na projekte som sa podieľala programátorsky aj dizajnérsky. Návrh bol zameraný na jednoduchosť a prehľadnosť, keďže daná oblasť obsahuje veľké množstvo informácií."
+                data-imgs="skk.webp, skk-2.webp, skk-3.webp, skk-4.webp, skk-5.webp, skk-6.webp, skk-7.webp, skk-8.webp"
+                onclick="openProject(this)">
+                <div class="pr-img"><img src="skk.webp" alt="SKK Canislog"></div>
+                <div class="pr-text">
+                    <span class="pr-index">02</span>
+                    <h2 class="pr-title">SKK<br>Canislog</h2>
+                    <span class="pr-cat">Web Design & Development</span>
+                </div>
+                <span class="pr-arrow">→</span>
+            </div>
+
+            <div class="project-row"
+                data-title="YAUTA"
+                data-description="Web Design & Development"
+                data-article="Tvorba webovej stránky a dizajn (koncept) s databázou pre firmu s nehnuteľnosťami YAUTA. Projekt bol zameraný na vytvorenie moderného a funkčného dizajnu, ktorý by odrážal profesionálny charakter firmy a zároveň poskytoval intuitívnu navigáciu pre návštevníkov. Dizajn kládol dôraz na vizuálnu estetiku, použitie kvalitných fotografií a moderných webových technológií s cieľom zvýšiť atraktivitu a užívateľský zážitok z webovej stránky."
+                data-imgs="yauta.webp, y-2.webp, y-3.webp, y-4.webp, y-5.webp, y-6.webp, y-7.webp, y-8.webp, y-9.webp, y-10.webp"
+                onclick="openProject(this)">
+                <div class="pr-img"><img src="yauta.webp" alt="YAUTA"></div>
+                <div class="pr-text">
+                    <span class="pr-index">03</span>
+                    <h2 class="pr-title">YAUTA</h2>
+                    <span class="pr-cat">Web Design & Development</span>
+                </div>
+                <span class="pr-arrow">→</span>
+            </div>
+
+            <div class="project-row"
+                data-title="CARLTON"
+                data-description="Web Design & Development"
+                data-article="Tvorba webovej stránky a dizajn (koncept) pre hotel Carlton. Projekt bol zameraný na vytvorenie elegantného a funkčného dizajnu, ktorý by odrážal luxusný charakter hotela a zároveň poskytoval intuitívnu navigáciu pre návštevníkov. Dizajn kládol dôraz na vizuálnu estetiku, použitie kvalitných fotografií a moderných webových technológií s cieľom zvýšiť atraktivitu a užívateľský zážitok z webovej stránky."
+                data-imgs="carlton.webp, c1.webp, c2.webp, c4.webp, c5.webp, c6.webp, c7.webp"
+                onclick="openProject(this)">
+                <div class="pr-img"><img src="carlton.webp" alt="CARLTON"></div>
+                <div class="pr-text">
+                    <span class="pr-index">04</span>
+                    <h2 class="pr-title">CARLTON</h2>
+                    <span class="pr-cat">Web Design & Development</span>
+                </div>
+                <span class="pr-arrow">→</span>
+            </div>
+
+        </div>
+
+        <!-- GRAPHIC DESIGN -->
+        <div class="cat-section hidden" id="cat-graphicdesign">
+
+            <div class="project-row"
+                data-title="Spišskí rytieri"
+                data-description="Visual Identity"
+                data-article="Grafický projekt pre extraligový basketbalový tím zo Spišskej Novej Vsi. Projekt zahŕňal návrh podpisových kariet pre hráčov a kompletnú vizuálnu komunikáciu pre Instagram profil klubu. Dizajn vychádza z klubových farieb a pracuje s výrazným kontrastom s cieľom podporiť dynamiku, energiu a športový charakter klubu."
+                data-imgs="podpiskarta.webp, basket1.webp, basket2.webp"
+                onclick="openProject(this)">
+                <div class="pr-img"><img src="podpiskarta.webp" alt="Spišskí rytieri" loading="eager" fetchpriority="high"></div>
+                <div class="pr-text">
+                    <span class="pr-index">01</span>
+                    <h2 class="pr-title">Spišskí<br>rytieri</h2>
+                    <span class="pr-cat">Visual Identity</span>
+                </div>
+                <span class="pr-arrow">→</span>
+            </div>
+
+            <div class="project-row"
+                data-title="Menu"
+                data-description="Graphic Design"
+                data-article="Grafický návrh menu a nápojového lístka pre reštauráciu. Projekt zahŕňal výber typografie, farebnej palety a kompozície, aby sa dosiahol moderný a atraktívny vzhľad, ktorý odráža charakter reštaurácie a jej ponuku. Témou boli folklórne slávnosti, ktoré sa odrážajú v grafických prvkoch a ilustráciách použitých v dizajne."
+                data-imgs="menucko.webp, napojak.webp"
+                onclick="openProject(this)">
+                <div class="pr-img"><img src="napojak.webp" alt="Menu" loading="eager" fetchpriority="high"></div>
+                <div class="pr-text">
+                    <span class="pr-index">02</span>
+                    <h2 class="pr-title">Menu</h2>
+                    <span class="pr-cat">Graphic Design</span>
+                </div>
+                <span class="pr-arrow">→</span>
+            </div>
+
+
+            <div class="project-row"
+                data-title="Meyhem"
+                data-description="Artwork"
+                data-article="K názvu tohto diela je pripojená aj vysvetlivka s podtitulom „nútený chaos“. Napadlo ma to preto, lebo som často ignorovala chaos, ktorý zámerne vytvárajú médiá a ľudia pri moci, aby v ľuďoch vyvolali strach a paniku. A keďže som o tom vedela, neriešila som to. No neskôr som si povedala, že dosť – už viac nechcem zatvárať oči, a vtedy mi napadlo slovo Mayhem. Na boku je citát od Einsteina – k tomu asi netreba veľa dodávať, ten sa vysvetľuje sám. Nižšie je umiestnený obraz Titanomachie, ktorý zobrazuje boj medzi Titánmi a bohmi z Olympu. Tento výjav symbolizuje boj obyčajných ľudí dole s tými, ktorí držia moc – vlády, mocnosti, systém. Zvýraznený je Titán Lapos, pretože je Titánom smrti, a je tam práve preto, lebo znázorňuje, že často sa nič nezačne a nič nezmení, pokiaľ sa niekto neobetuje – či už smrťou, alebo inou formou obete. Pod týmto výjavom sa nachádza zobrazenie Medúzy a Persea, ktorý ju zabil. Táto scéna symbolizuje takú tú poslednú nádej – že dobro by malo vždy zvíťaziť a nádej umiera posledná. Zároveň je to však aj paradox, pretože Perseus je vlastne syn bohov Olympu, takže sa tým dostávame do začarovaného kruhu."
+                data-imgs="mayhem.webp"
+                onclick="openProject(this)">
+                <div class="pr-img"><img src="mayhem.webp" alt="Meyhem" loading="eager" fetchpriority="high"></div>
+                <div class="pr-text">
+                    <span class="pr-index">02</span>
+                    <h2 class="pr-title">Meyhem</h2>
+                    <span class="pr-cat">Artwork</span>
+                </div>
+                <span class="pr-arrow">→</span>
+            </div>
+
+            <div class="project-row"
+                data-title="Tatry"
+                data-description="Artwork"
+                data-article="Séria autorských vizuálnych prác zameraných na experiment s kompozíciou, farbou a typografiou. Prírodné textúry a tmavý kontrast vytvárajú hypnotizujúcu atmosféru vysokohorskej krajiny."
+                data-imgs="tatry.webp"
+                onclick="openProject(this)">
+                <div class="pr-img"><img src="tatry.webp" alt="Tatry" loading="eager" fetchpriority="high"></div>
+                <div class="pr-text">
+                    <span class="pr-index">03</span>
+                    <h2 class="pr-title">Tatry</h2>
+                    <span class="pr-cat">Artwork</span>
+                </div>
+                <span class="pr-arrow">→</span>
+            </div>
+
+            <div class="project-row"
+                data-title="Amartes"
+                data-description="Artwork"
+                data-article="Séria autorských vizuálnych prác zameraných na experiment s kompozíciou, farbou a typografiou. Vyjadrenie emócií cez abstraktné tvary a farby."
+                data-imgs="amartes.webp"
+                onclick="openProject(this)">
+                <div class="pr-img"><img src="amartes.webp" alt="Amartes"></div>
+                <div class="pr-text">
+                    <span class="pr-index">04</span>
+                    <h2 class="pr-title">Amartes</h2>
+                    <span class="pr-cat">Artwork</span>
+                </div>
+                <span class="pr-arrow">→</span>
+            </div>
+
+            <div class="project-row"
+                data-title="Solace"
+                data-description="Artwork"
+                data-article="Séria autorských vizuálnych prác zameraných na experiment s kompozíciou, farbou a typografiou. Vyjadrenie emócií cez abstraktné tvary — ticho a pokoj zachytené v grafickej forme."
+                data-imgs="solace.webp"
+                onclick="openProject(this)">
+                <div class="pr-img"><img src="solace.webp" alt="Solace"></div>
+                <div class="pr-text">
+                    <span class="pr-index">05</span>
+                    <h2 class="pr-title">Solace</h2>
+                    <span class="pr-cat">Artwork</span>
+                </div>
+                <span class="pr-arrow">→</span>
+            </div>
+
+        </div>
+
+        <!-- LOGO DESIGN -->
+        <div class="cat-section hidden" id="cat-logodesign">
+
+            <div class="project-row"
+                data-title="AKZ"
+                data-description="Logo & Visual Identity"
+                data-article="Tvorba loga a vizuálnej identity pre kynologický klub. Návrh bol zameraný na čistotu a prehľadnosť, aby identita fungovala naprieč rôznymi formátmi — od digitálnych kanálov až po tlačené materiály."
+                data-imgs="logo_akz.webp, logomanual.webp, akz-1.webp"
+                onclick="openProject(this)">
+                <div class="pr-img"><img src="logo_akz.webp" alt="AKZ" loading="eager" fetchpriority="high"></div>
+                <div class="pr-text">
+                    <span class="pr-index">01</span>
+                    <h2 class="pr-title">AKZ</h2>
+                    <span class="pr-cat">Logo & Visual Identity</span>
+                </div>
+                <span class="pr-arrow">→</span>
+            </div>
+
+        </div>
+
+        <!-- PHOTO POSTPROCESSING -->
+        <div class="cat-section hidden" id="cat-photo">
+
+            <div class="project-row"
+                data-title="RED"
+                data-description="Creative Post-processing"
+                data-article="Postprodukcia štúdiového portrétu a transformácia pôvodne neutrálne nasnímaného portrétu do umeleckého vizuálu s dôrazom na prácu so svetlom, tieňom a atmosférou. Úpravy zahŕňali kreatívne doladenie expozície, kontrastu a farebného tónovania."
+                data-imgs="red.webp, f1.webp"
+                onclick="openProject(this)">
+                <div class="pr-img"><img src="red.webp" alt="RED"></div>
+                <div class="pr-text">
+                    <span class="pr-index">01</span>
+                    <h2 class="pr-title">RED</h2>
+                    <span class="pr-cat">Creative Post-processing</span>
+                </div>
+                <span class="pr-arrow">→</span>
+            </div>
+
+            <div class="project-row"
+                data-title="Sleevless"
+                data-description="Creative Post-processing"
+                data-article="Postprodukcia štúdiového portrétu a transformácia pôvodne neutrálne nasnímaného portrétu do umeleckého vizuálu s dôrazom na prácu so svetlom, tieňom a atmosférou. Kompozícia pracuje s výrazným kontrastom a minimalistickým pozadím."
+                data-imgs="sleevless.webp, f2.webp"
+                onclick="openProject(this)">
+                <div class="pr-img"><img src="sleevless.webp" alt="Sleevless"></div>
+                <div class="pr-text">
+                    <span class="pr-index">02</span>
+                    <h2 class="pr-title">Sleevless</h2>
+                    <span class="pr-cat">Creative Post-processing</span>
+                </div>
+                <span class="pr-arrow">→</span>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- MENU OVERLAY -->
+    <div id="overlay-menu" class="overlay">
+        <div class="close-btn" onclick="toggleMenu()" style="cursor: pointer;">CLOSE ○</div>
+        <div class="menu-wrapper">
+            <nav class="menu-links">
+                <a href="index.html">DOMOV</a>
+                <a href="about.html">O MNE</a>
+            </nav>
+            <div class="menu-contact-section">
+                <span class="contact-label">POĎME TVORIŤ SPOLU</span>
+                <a href="mailto:kdzurnakovaa@gmail.com" class="contact-email">kdzurnakovaa@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT DETAIL OVERLAY -->
+    <div id="project-detail" class="overlay project-detail-overlay" style="display:none;">
+        <div class="detail-close" onclick="closeProjectDetail()">CLOSE ✕</div>
+        <div class="detail-inner">
+            <div class="detail-header">
+                <div class="detail-meta">
+                    <span id="detail-cat" class="detail-cat-label"></span>
+                </div>
+                <h2 id="detail-title" class="detail-title"></h2>
+                <p id="detail-article" class="detail-article"></p>
+            </div>
+            <div id="detail-gallery" class="detail-gallery"></div>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div id="img-lightbox" class="img-lightbox" style="display:none;" onclick="lbBgClick(event)">
+        <div class="lb-close" onclick="closeLightbox()">&#10005;</div>
+        <button class="lb-arrow lb-prev" onclick="lbNav(-1)">&#8592;</button>
+        <div class="lb-img-wrap">
+            <img id="lb-img" src="" alt="">
+        </div>
+        <button class="lb-arrow lb-next" onclick="lbNav(1)">&#8594;</button>
+        <div class="lb-counter"><span id="lb-cur">1</span> / <span id="lb-total">1</span></div>
+    </div>
+
+    <footer class="main-footer">
+        <div id="live-clock"></div>
+        <div class="copyright">© 2026 Kristina Dzurnakova.</div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // --- Category switching ---
+        function switchCategory(cat, btn) {
+            document.querySelectorAll('.cat-section').forEach(s => s.classList.add('hidden'));
+            document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+            document.getElementById('cat-' + cat).classList.remove('hidden');
+            btn.classList.add('active');
+        }
+
+        // --- Project detail ---
+        function openProject(row) {
+            const title = row.getAttribute('data-title') || '';
+            const description = row.getAttribute('data-description') || '';
+            const article = row.getAttribute('data-article') || '';
+            const imgsRaw = row.getAttribute('data-imgs') || '';
+            const imgs = imgsRaw.split(',').map(s => s.trim()).filter(Boolean);
+
+            document.getElementById('detail-title').textContent = title;
+            document.getElementById('detail-cat').textContent = description ? '[' + description + ']' : '';
+            document.getElementById('detail-article').textContent = article;
+
+            const gallery = document.getElementById('detail-gallery');
+            gallery.innerHTML = '';
+            gallery.className = 'detail-gallery' + (imgs.length > 1 ? ' multi' : '');
+
+            imgs.forEach((src, idx) => {
+                const wrap = document.createElement('div');
+                wrap.className = 'detail-img-wrap';
+                const img = document.createElement('img');
+                img.src = src;
+                img.alt = title;
+                img.dataset.index = idx;
+                img.addEventListener('click', () => openLightbox(idx));
+                wrap.appendChild(img);
+                gallery.appendChild(wrap);
+            });
+
+            // store imgs for lightbox
+            window._lbImgs = imgs;
+            window._lbTitle = title;
+
+            const overlay = document.getElementById('project-detail');
+            overlay.style.display = 'flex';
+            overlay.scrollTop = 0;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectDetail() {
+            document.getElementById('project-detail').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // --- Lightbox ---
+        let _lbIndex = 0;
+
+        function openLightbox(idx) {
+            const imgs = window._lbImgs || [];
+            if (!imgs.length) return;
+            _lbIndex = idx;
+            document.getElementById('lb-img').src = imgs[_lbIndex];
+            document.getElementById('lb-cur').textContent = _lbIndex + 1;
+            document.getElementById('lb-total').textContent = imgs.length;
+            // show/hide arrows
+            document.querySelector('.lb-prev').style.opacity = imgs.length > 1 ? '1' : '0';
+            document.querySelector('.lb-next').style.opacity = imgs.length > 1 ? '1' : '0';
+            document.getElementById('img-lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('img-lightbox').style.display = 'none';
+        }
+
+        function lbNav(dir) {
+            const imgs = window._lbImgs || [];
+            _lbIndex = (_lbIndex + dir + imgs.length) % imgs.length;
+            const lbImg = document.getElementById('lb-img');
+            lbImg.style.opacity = '0';
+            setTimeout(() => {
+                lbImg.src = imgs[_lbIndex];
+                lbImg.style.opacity = '1';
+            }, 150);
+            document.getElementById('lb-cur').textContent = _lbIndex + 1;
+        }
+
+        function lbBgClick(e) {
+            if (e.target === document.getElementById('img-lightbox')) closeLightbox();
+        }
+
+        // Keyboard nav
+        document.addEventListener('keydown', e => {
+            const lb = document.getElementById('img-lightbox');
+            if (lb.style.display === 'flex') {
+                if (e.key === 'ArrowRight') lbNav(1);
+                if (e.key === 'ArrowLeft') lbNav(-1);
+                if (e.key === 'Escape') closeLightbox();
+            } else if (document.getElementById('project-detail').style.display === 'flex') {
+                if (e.key === 'Escape') closeProjectDetail();
+            }
+        });
+
+        // Touch/swipe for lightbox
+        let _tsX = null;
+        document.getElementById('img-lightbox').addEventListener('touchstart', e => {
+            _tsX = e.touches[0].clientX;
+        }, { passive: true });
+        document.getElementById('img-lightbox').addEventListener('touchend', e => {
+            if (_tsX === null) return;
+            const dx = e.changedTouches[0].clientX - _tsX;
+            if (Math.abs(dx) > 50) lbNav(dx < 0 ? 1 : -1);
+            _tsX = null;
+        }, { passive: true });
+    </script>
+</body>
+</html>
